@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #222;
+}
+
+header {
+    width: 100%;
+    background: #b8d4ee;
+    border-bottom: 2px solid #555;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 15px 0;
+}
+
+header div {
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #b8d4ee;
+}
+
+tr:nth-child(even) {
+    background: #eeeeee;
+}
+
+tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+form {
+    max-width: 600px;
+}
+
+form p {
+    margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+    padding: 8px;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    margin-top: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    background: #b8d4ee;
+    padding: 30px;
+    text-align: center;
+    border-top: 2px solid #555;
+}
