@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div>
+        <strong>Лого</strong>
+    </div>
+
+    <h1>Лабораторная работа</h1>
+
+    <nav>
+        <a href="#links">Ссылки</a>
+        <a href="#table">Таблица</a>
+        <a href="#form">Форма</a>
+    </nav>
+
+</header>
+
+<main>
+
+<section id="links">
+
+<h2>Гиперссылки</h2>
+
+<ul>
+
+    <li>
+        <a href="https://kubsu.ru/">
+            1. Абсолютная ссылка на kubsu.ru
+        </a>
+    </li>
+
+    <li>
+        <a href="http://kubsu.ru/">
+            2. Абсолютная ссылка на kubsu.ru по HTTP
+        </a>
+    </li>
+
+    <li>
+        <a href="https://kubsu.ru/">
+            <img src="images/picture.svg"
+                 alt="КубГУ"
+                 width="250">
+        </a>
+    </li>
+
+    <li>
+        <a href="current/page.html">
+            4. Сокращённая ссылка на внутреннюю страницу
+        </a>
+    </li>
+
+    <li>
+        <a href="/">
+            5. Сокращённая ссылка на главную страницу
+        </a>
+    </li>
+
+    <li>
+        <a href="#form">
+            6. Перейти к форме
+        </a>
+    </li>
+
+    <li>
+        <a href="current/page.html?name=Ivan&age=20&group=101">
+            7. Ссылка с тремя параметрами
+        </a>
+    </li>
+
+    <li>
+        <a href="current/page.html?id=123">
+            8. Ссылка с параметром id
+        </a>
+    </li>
+
+    <li>
+        <a href="current/contacts.html">
+            9. Относительная ссылка на страницу
+        </a>
+    </li>
+
+    <li>
+        <a href="about/about.html">
+            10. Страница в каталоге about
+        </a>
+    </li>
+
+    <li>
+        <a href="current/level1/level2/index.html">
+            11. Страница в каталоге уровнем выше
+        </a>
+    </li>
+
+    <li>
+        <a href="current/level1/level2/index.html">
+            12. Страница в каталоге двумя уровнями выше
+        </a>
+    </li>
+
+    <li>
+        <p>
+            Это контекстная ссылка:
+            <a href="https://kubsu.ru/"
+               title="Официальный сайт КубГУ">
+                официальный сайт КубГУ
+            </a>.
+        </p>
+    </li>
+
+    <li>
+        <a href="https://ru.wikipedia.org/wiki/HTML#История">
+            14. Фрагмент страницы стороннего сайта
+        </a>
+    </li>
+
+    <li>
+
+        <p>15. Области изображения:</p>
+
+        <img src="images/picture.svg"
+             alt="Карта"
+             width="400"
+             height="200"
+             usemap="#myMap">
+
+        <map name="myMap">
+
+            <area shape="rect"
+                  coords="0,0,200,200"
+                  href="https://kubsu.ru/"
+                  alt="КубГУ">
+
+            <area shape="circle"
+                  coords="300,100,80"
+                  href="https://www.wikipedia.org/"
+                  alt="Wikipedia">
+
+        </map>
+
+    </li>
+
+    <li>
+        <a href="">
+            16. Ссылка с пустым href
+        </a>
+    </li>
+
+    <li>
+        <a>
+            17. Ссылка без href
+        </a>
+    </li>
+
+    <li>
+        <a href="https://example.com/" rel="nofollow">
+            18. Ссылка с rel="nofollow"
+        </a>
+    </li>
+
+    <li>
+        <a href="current/noindex.html">
+            19. Страница, запрещённая для индексации
+        </a>
+    </li>
+
+    <li>
+
+        <p>20. Нумерованный список ссылок:</p>
+
+        <ol>
+
+            <li>
+                <a href="https://kubsu.ru/"
+                   title="Главная страница КубГУ">
+                    Главная
+                </a>
+            </li>
+
+            <li>
+                <a href="https://kubsu.ru/education/"
+                   title="Раздел Образование">
+                    Образование
+                </a>
+            </li>
+
+            <li>
+                <a href="https://kubsu.ru/about/"
+                   title="Раздел Об университете">
+                    Об университете
+                </a>
+            </li>
+
+        </ol>
+
+    </li>
+
+    <li>
+        <a href="ftp://student:password@ftp.example.com/file.zip">
+            21. Файл на
+
+
+FTP-сервере с авторизацией
+        </a>
+    </li>
+
+</ul>
+
+</section>
+
+<section id="table">
+
+<h2>Таблица</h2>
+
+<table border="1">
+
+    <tr>
+        <th>№</th>
+        <th>Название</th>
+        <th>Описание</th>
+        <th>Ссылка</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td rowspan="2">HTML</td>
+        <td>Язык разметки веб-страниц</td>
+        <td>
+            <a href="https://html.spec.whatwg.org/">
+                HTML
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Структура страницы</td>
+        <td>
+            <a href="#form">
+                Форма
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td rowspan="2">CSS</td>
+        <td>Стилизация веб-страницы</td>
+        <td>
+            <a href="https://www.w3.org/Style/CSS/">
+                CSS
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Оформление элементов</td>
+        <td>
+            <a href="#form">
+                Перейти
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">5</td>
+        <td>Гиперссылки</td>
+        <td>
+            <a href="#links">
+                Ссылки
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>6</td>
+        <td>Форма</td>
+        <td>Ввод данных пользователя</td>
+        <td>
+            <a href="#form">
+                Открыть
+            </a>
+        </td>
+    </tr>
+
+</table>
+
+</section>
+
+<section id="form">
+
+<h2>Форма</h2>
+
+<form action="#" method="post">
+
+    <p>
+        <label for="name">
+            ФИО:
+        </label>
+
+        <input type="text"
+               id="name"
+               name="name">
+    </p>
+
+    <p>
+        <label for="email">
+            Email:
+        </label>
+
+        <input type="email"
+               id="email"
+               name="email">
+    </p>
+
+    <p>
+        <label for="phone">
+            Телефон:
+        </label>
+
+        <input type="tel"
+               id="phone"
+               name="phone">
+    </p>
+
+    <p>
+        <label for="birthdate">
+            Дата рождения:
+        </label>
+
+        <input type="date"
+               id="birthdate"
+               name="birthdate">
+    </p>
+
+    <p>
+
+        Пол:
+
+        <label>
+            <input type="radio"
+                   name="gender"
+                   value="male">
+            Мужской
+        </label>
+
+        <label>
+            <input type="radio"
+                   name="gender"
+                   value="female">
+            Женский
+        </label>
+
+    </p>
+
+    <p>
+
+        <label for="faculty">
+            Факультет:
+        </label>
+
+        <select id="faculty"
+                name="faculty">
+
+            <option value="fksis">
+                ФКТиПМ
+            </option>
+
+            <option value="economics">
+                Экономический
+            </option>
+
+            <option value="law">
+                Юридический
+            </option>
+
+        </select>
+
+    </p>
+
+    <p>
+
+        <label for="message">
+            Сообщение:
+        </label>
+
+        
+
+        <textarea id="message"
+                  name="message"
+                  rows="5"
+                  cols="40"></textarea>
+
+    </p>
+
+    <p>
+
+        <label>
+
+            <input type="checkbox"
+                   name="agreement">
+
+            Согласен на обработку данных
+
+        </label>
+
+    </p>
+
+    <button type="submit">
+        Отправить
+    </button>
+
+    <button type="reset">
+        Очистить
+    </button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+    © Сергей Синица
+
+</footer>
+
+</body>
+</html>
