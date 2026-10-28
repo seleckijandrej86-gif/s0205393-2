@@ -25,7 +25,7 @@
     <!-- Основной контент -->
     <main id="content" class="container">
 
-        <!-- 21 тип гиперссылок из первого задания -->
+        <!-- Список гиперссылок -->
         <section id="links" class="block">
             <h2>Список гиперссылок</h2>
 
@@ -127,33 +127,141 @@
                             alt="КубГУ"
                             title="Перейти на сайт КубГУ"
                             target="_blank"
-                        >
-
+                        > 
                         <area
-КубГУ
-kubsu.ru
 
 
-ть</button>
-                </p>
+="circle"
+                            coords="885,296,190"
+                            href="https://ru.wikipedia.org/"
+                            alt="Википедия"
+                            title="Перейти в Википедию"
+                            target="_blank"
+                        >
+                    </map>
+                </li>
 
-            </form>
+                <li>
+                    <a href="">Ссылка с пустым href</a>
+                </li>
+
+                <li>
+                    <a>Ссылка без href</a>
+                </li>
+
+                <li>
+                    <a href="https://example.com" rel="nofollow">
+                        Ссылка с rel="nofollow"
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://example.com" rel="noindex">
+                        Ссылка с rel="noindex"
+                    </a>
+                </li>
+
+                <li>
+                    <p>Нумерованный список ссылок с подсказками title:</p>
+
+                    <ol>
+                        <li>
+                            <a
+                                href="https://kubsu.ru"
+                                title="Официальный сайт Кубанского государственного университета"
+                            >
+                                Сайт КУБГУ
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://developer.mozilla.org"
+                                title="Справочник по HTML, CSS и JavaScript"
+                            >
+                                MDN Web Docs
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://html.spec.whatwg.org/"
+                                title="Официальная спецификация HTML"
+                            >
+                                Спецификация HTML
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <a href="ftp://username:password@ftp.example.com/file.txt">
+                        Файл на FTP-сервере
+                    </a>
+                </li>
+            </ul>
         </section>
 
-    </main>
+        <!-- Таблица -->
+        <section id="table" class="block">
+            <h2>Таблица</h2>
 
-    <!-- Подвал -->
-    <footer id="footer">
-        <div class="container footer-inner">
-            <p>(c) Селецкий Андрей</p>
-        </div>
-    </footer>
+            <table border="1" cellspacing="0" cellpadding="5"> <!-- Добавил базовые атрибуты для видимости границ -->
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Имя</th>
+                        <th>Предмет</th>
+                        <th>Оценка</th>
+                    </tr>
+                </thead>
 
-</body>
-</html>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Андрей</td>
+                        <td>HTML</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Иван</td>
+                        <td>CSS</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Мария</td>
+                        <td>HTML</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Елена</td>
+                        <td>CSS</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Сергей</td>
+                        <td>JavaScript</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td> 
+                        <td colspan="2">Итоговая оценка группы</td>
+                        <td>4.6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Форма
 
 
->Форма</h2>
+-->
+        <section id="form" class="block">
+            <h2>Форма</h2>
 
             <form action="#" method="post" class="contact-form">
 
@@ -265,145 +373,34 @@ kubsu.ru
 
                 <p>
                     <label>
+                        <!-- ИСПРАВЛЕНО: добавлен пробел между type="checkbox" и name="contract" -->
                         <input
-                            type="checkbox"
+                            type="checkbox" 
                             name="contract"
                             value="accepted"
                             required
                         >
-                        С контрактом ознакомлен(а)
+
+
+С контрактом ознакомлен(а)
                     </label>
                 </p>
 
                 <p>
-                    <button type="submit">Сохрани
+                    <button type="submit">Сохранить</button>
+                </p>
 
-
-shape="circle"
-                            coords="885,296,190"
-                            href="https://ru.wikipedia.org/"
-                            alt="Википедия"
-                            title="Перейти в Википедию"
-                            target="_blank"
-                        >
-                    </map>
-                </li>
-
-                <li>
-                    <a href="">Ссылка с пустым href</a>
-                </li>
-
-                <li>
-                    <a>Ссылка без href</a>
-                </li>
-
-                <li>
-                    <a href="https://example.com" rel="nofollow">
-                        Ссылка с rel="nofollow"
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://example.com" rel="noindex">
-                        Ссылка с rel="noindex"
-                    </a>
-                </li>
-
-                <li>
-                    <p>Нумерованный список ссылок с подсказками title:</p>
-
-                    <ol>
-                        <li>
-                            <a
-                                href="https://kubsu.ru"
-                                title="Официальный сайт Кубанского государственного университета"
-                            >
-                                Сайт КУБГУ
-                            </a>
-                        </li>
-
-                        <li>
-                            <a
-                                href="https://developer.mozilla.org"
-                                title="Справочник по HTML, CSS и JavaScript"
-                            >
-                                MDN Web Docs
-                            </a>
-                        </li>
-
-                        <li>
-                            <a
-                                href="https://html.spec.whatwg.org/"
-                                title="Официальная спецификация HTML"
-                            >
-                                Спецификация HTML
-                            </a>
-                        </li>
-                    </ol>
-                </li>
-
-                <li>
-                    <a href="ftp://username:password@ftp.example.com/file.txt">
-                        Файл на FTP-сервере
-                    </a>
-                </li>
-            </ul>
+            </form>
         </section>
 
-        <!-- Таблица -->
-        <section id="table" class="block">
-            <h2>Таблица</h2>
+    </main>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>№</th>
-                        <th>Имя</th>
-                        <th>Предмет</th>
-                        <th>Оценка</th>
-                    </tr>
-                </thead>
+    <!-- Подвал -->
+    <footer id="footer">
+        <div class="container footer-inner">
+            <p>(c) Селецкий Андрей</p>
+        </div>
+    </footer>
 
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Андрей</td>
-                        <td>HTML</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Иван</td>
-                        <td>CSS</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Мария</td>
-                        <td>HTML</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Елена</td>
-                        <td>CSS</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Сергей</td>
-                        <td>JavaScript</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td colspan="2">Итоговая оценка группы</td>
-                        <td>4.6</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Форма из первого задания -->
-        <section id="form" class="block">
-            <h2
+</body>
+</html> shape
