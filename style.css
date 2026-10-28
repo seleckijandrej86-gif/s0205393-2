@@ -5,126 +5,233 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: white;
+    line-height: 1.6;
     color: #222;
+    background-color: #f2f5f8;
 }
 
-header {
+/* Общий контейнер */
+.container {
     width: 100%;
-    background: #b8d4ee;
-    border-bottom: 2px solid #555;
+    max-width: 960px;
+    margin: 0 auto;
     padding: 20px;
-    text-align: center;
 }
 
-header h1 {
-    margin: 15px 0;
+/* Шапка */
+#header {
+    width: 100%;
+    background-color: #304b6b;
+    color: white;
 }
 
-header div {
-    font-size: 20px;
-}
-
-nav {
+.header-inner {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-nav a {
-    color: #222;
-    text-decoration: none;
+/* Логотип */
+.logo {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #e9bd54;
+    color: #304b6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
 }
 
-nav a:hover {
+/* Название */
+.site-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Меню справа */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-left: auto;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu a:hover {
     text-decoration: underline;
 }
 
-main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 30px 20px;
+/* Основной контент */
+#content {
+    background-color: white;
+    min-height: 500px;
 }
 
-section {
-    margin-bottom: 50px;
+.block {
+    margin-bottom: 35px;
 }
 
-h2 {
-    color: #333;
+.block h2 {
+    color: #304b6b;
+    border-bottom: 2px solid #e9bd54;
+    padding-bottom: 8px;
 }
 
-ul {
-    line-height: 1.8;
+/* Ссылки */
+#links a {
+    color: #1769aa;
 }
 
-table {
+#links li {
+    margin-bottom: 8px;
+}
+
+/* Изображения */
+.map-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Таблица */
+#table table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
 }
 
-th,
-td {
-    border: 1px solid #555;
-    padding: 12px;
-    text-align: center;
+#table th,
+#table td {
+    border: 1px solid #888;
+    padding: 10px;
+    text-align: left;
 }
 
-th {
-    background: #b8d4ee;
+#table th {
+    background-color: #304b6b;
+    color: white;
 }
 
-tr:nth-child(even) {
-    background: #eeeeee;
+/* Чередование цветов строк */
+#table tbody tr:nth-child(odd) {
+    background-color: #e5edf5;
 }
 
-tr:nth-child(odd) {
-    background: #ffffff;
+#table tbody tr:nth-child(even) {
+    background-color: #fff4d9;
 }
 
-form {
-    max-width: 600px;
+/* Форма */
+.contact-form {
+    max-width: 550px;
 }
 
-form p {
-    margin-bottom: 20px;
+.contact-form p {
+    margin: 0 0 18px;
 }
 
-input,
-select,
-textarea {
-    padding: 8px;
-    font-size: 16px;
+.contact-form label {
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-select,
-textarea {
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form input[type="date"],
+.contact-form select,
+.contact-form textarea {
+    display: block;
     width: 100%;
-    margin-top: 5px;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font: inherit;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-    width: auto;
+.contact-form fieldset {
+    margin: 0 0 18px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
 }
 
-button {
-    padding: 10px 20px;
-    margin-right: 10px;
+.contact-form fieldset label {
+    margin-right: 15px;
+}
+
+.contact-form select[multiple] {
+    min-height: 150px;
+}
+
+.contact-form small {
+    display: block;
+    margin-top: 6px;
+    color: #555;
+}
+
+.contact-form button {
+    padding: 11px 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: #304b6b;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
 }
 
-footer {
-    width: 100%;
-    background: #b8d4ee;
-    padding: 30px;
-    text-align: center;
-    border-top: 2px solid #555;
+.contact-form button:hover {
+    background-color: #45688f;
 }
+
+/* Подвал */
+#footer {
+    width: 100%;
+    background-color: #304b6b;
+    color: white;
+}
+
+.footer-inner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-inner p {
+    margin: 0;
+}
+
+/* Адаптация для мобильных устройств */
+max-width: 700px {
+    .header-inner {
+        flex-wrap: wrap;
+    }
+
+    .site-title {
+        font-size: 20px;
+    }
+
+    .menu {
+        width: 100%;
+        margin-left: 0;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #table th,
+    #table td {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+
+
